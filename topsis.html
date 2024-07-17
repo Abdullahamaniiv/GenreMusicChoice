@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan TOPSIS - GenreMusicChoice</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">GenreMusicChoice</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <h2>Perhitungan TOPSIS</h2>
+        <p>Masukkan nilai kriteria untuk masing-masing alternatif:</p>
+        <form id="topsisForm">
+            <!-- Kriteria input fields here -->
+            <div class="form-group">
+                <label for="a1">Alternatif 1</label>
+                <input type="text" class="form-control" id="a1" required>
+            </div>
+            <div class="form-group">
+                <label for="a2">Alternatif 2</label>
+                <input type="text" class="form-control" id="a2" required>
+            </div>
+            <!-- Add more input fields for other alternatives and criteria -->
+            <button type="submit" class="btn btn-primary">Hitung</button>
+        </form>
+        <div id="result" class="mt-5"></div>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/topsis.js"></script>
+</body>
+</html>
